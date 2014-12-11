@@ -1,3 +1,5 @@
 # responsive-profile
 
-You should put a description of your project here, plus any setup instructions for other developers, if necessary.
+For Bitmaker Front End Development Course.
+
+Profile/Resume website.
