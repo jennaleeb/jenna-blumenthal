@@ -1,0 +1,200 @@
+/*****************************************************************************
+  responsive-profile
+******************************************************************************/
+
+
+@import '../../bower_components/bourbon/dist/_bourbon.scss';
+@import '../../bower_components/neat/app/assets/stylesheets/_neat.scss';
+
+
+
+
+
+/*****************************************************************************
+  Base Styles
+******************************************************************************/
+
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Amatic SC', sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+/*****************************************************************************
+  Layout Styles
+******************************************************************************/
+@media screen and (max-width: 700px){
+	.header {
+	   position: fixed; 
+	   width: 100%; /* for IE 6 */
+	   border: none;  
+	   margin: 0;
+	   padding: 0;
+	   background-color: white;	
+	}
+
+	.header ul {
+		list-style-type: none;
+	    margin: 0;
+	    padding-top: 0;
+	    padding-bottom: 5px;
+	    padding-right: 5px;
+	    float: right;
+
+	}
+
+	.header li {
+		display: inline;
+		padding: 5px;
+
+
+	}
+
+	.header li a {
+		color: black;
+		font-size: 20px;
+	}
+
+	a:link, a:visited {
+	    color: grey;
+
+	}
+
+	p a:hover {
+	    color: tomato;
+	}	
+
+	h1 { 
+	   position: absolute; 
+	   top: 70px; 
+	   left: 5px; 
+	   font-size: 10vw;
+	   color: white;
+	   font-weight: normal;
+	}
+
+	.image h2 { 
+	   position: absolute; 
+	   top: 180px; 
+	   left: 5px; 
+	   font-size: 15vw;
+	   color: white;
+	   font-weight: normal;
+}
+
+	.about {
+	text-align: center;
+	}
+
+	.about h2 {
+		font-size: 30px;
+	}
+
+	.about p {
+		width: 100%;
+	  	margin: 0;
+	  	font-size: 24px;
+
+	}
+
+
+	.about a img {
+		width: 48px;
+		padding: 10px 5px 25px 5px;
+		position: relative;
+	}
+
+}
+
+@media screen and (min-width: 750px) {
+	.header {
+	   position: fixed; 
+	   width: 100%; /* for IE 6 */
+	   border: none;  
+	   margin: 0;
+	   padding: 0;
+	   background-color: white;	
+	   top: 0;
+	   position: fixed;
+	}
+
+	.header ul {
+		list-style-type: none;
+	    margin: 0;
+	    padding-top: 12px;
+	    padding-bottom: 12px;
+	    padding-right: 12px;
+	    float: right;
+
+	}
+
+	.header li {
+		display: inline;
+		padding: 10px;
+
+
+
+	}
+
+	.header li a {
+		color: black;
+		font-size: 28px;
+	}
+
+
+	h1 { 
+	   position: absolute; 
+	   top: 105px; 
+	   left: 30px; 
+	   font-size: 95px;
+	   color: white;
+	   font-weight: normal;
+	}
+
+
+
+	header {
+		float: right;
+		padding: 10px;
+		border: 10px;
+	}
+
+	.about {
+		text-align: center;
+	}
+
+	.about h2 {
+		font-size: 80px;
+	}
+
+	.about p {
+		font-size: 44px;
+		width: 16.667em;
+	  	margin: 1em auto 1em auto;
+
+	}
+
+
+	.about a img {
+		width: 48px;
+		padding: 10px 5px 25px 5px;
+		position: relative;
+	}
+}
+
+
+
+
+
+/*****************************************************************************
+  Module Styles
+******************************************************************************/
+
+
+
+
