@@ -21,9 +21,11 @@ html, body {
   font-size: 24px; }
 
 body {
-  background: url(https://dl.dropboxusercontent.com/u/19014071/Bitmaker/profile_chandelier_v4.png) no-repeat;
+  background: url(https://dl.dropboxusercontent.com/u/19014071/Bitmaker/profile_chandelier_v4.png) no-repeat top center fixed;
   background-attachment: fixed;
-  background-size: cover; }
+  background-size: cover;
+  height: 100%;
+  width: 100%; }
 
 /*****************************************************************************
   Layout Styles
@@ -111,7 +113,7 @@ body {
 	}
 
 }*/
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 1px) {
   .header {
     width: 100%;
     /* for IE 6 */
@@ -126,7 +128,7 @@ body {
     margin: 0;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    padding-right: 0.5em;
+    padding-right: 1em;
     float: right; }
 
   .header li {
@@ -167,26 +169,40 @@ body {
     width: 100%;
     text-align: center; }
 
-  header {
-    float: right;
-    padding: 10px;
-    border: 10px; }
+  .content {
+    display: block;
+    background-color: white;
+    position: relative;
+    font-size: 1em;
+    text-align: center;
+    margin-top: 8em; }
 
   .about {
-    text-align: center; }
+    margin-top: 2em;
+    margin-bottom: 2em; }
 
-  .about h2 {
-    font-size: 80px; }
+  .content h2 {
+    font-size: 2em;
+    padding-top: 1em;
+    margin: 0 auto;
+    font-family: 'Amatic SC'; }
 
-  .about p {
-    font-size: 44px;
-    width: 16.667em;
+  .content p {
+    font-size: 1em;
+    width: 35em;
     margin: 1em auto 1em auto; }
 
-  .about a img {
+  .content a img {
     width: 48px;
     padding: 10px 5px 25px 5px;
     position: relative; }
+
+
+  .projects {
+    background-color: #282828;
+    padding-bottom: 1em;
+    color: white;
+    min-height: 20em; }
  }
 
 /*****************************************************************************
