@@ -185,7 +185,8 @@ body {
     font-size: 2em;
     padding-top: 1em;
     margin: 0 auto;
-    font-family: 'Amatic SC'; }
+    font-family: 'Amatic SC';
+    text-decoration: underline; }
 
   .content p {
     font-size: 1em;
