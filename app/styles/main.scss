@@ -17,25 +17,28 @@
 html, body {
 	margin: 0;
 	padding: 0;
-	font-family: 'Amatic SC', sans-serif;
+	font-family: Roboto,'Amatic SC', sans-serif;
+	font-size: 24px;
 }
 
-img {
-	max-width: 100%;
+body {
+	background: url(https://dl.dropboxusercontent.com/u/19014071/Bitmaker/profile_chandelier_v4.png) no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
+
 
 
 /*****************************************************************************
   Layout Styles
 ******************************************************************************/
-@media screen and (max-width: 700px){
+/*@media screen and (max-width: 700px){
 	.header {
-	   position: fixed; 
 	   width: 100%; /* for IE 6 */
-	   border: none;  
+/*	   border: none;  
 	   margin: 0;
 	   padding: 0;
-	   background-color: white;	
+
 	}
 
 	.header ul {
@@ -51,12 +54,14 @@ img {
 	.header li {
 		display: inline;
 		padding: 5px;
+		color: white;
+		font-style: sans-serif;
 
 
 	}
 
 	.header li a {
-		color: black;
+		color: white;
 		font-size: 20px;
 	}
 
@@ -85,7 +90,7 @@ img {
 	   font-size: 15vw;
 	   color: white;
 	   font-weight: normal;
-}
+	}
 
 	.about {
 	text-align: center;
@@ -109,26 +114,24 @@ img {
 		position: relative;
 	}
 
-}
+}*/
 
 @media screen and (min-width: 750px) {
 	.header {
-	   position: fixed; 
 	   width: 100%; /* for IE 6 */
 	   border: none;  
 	   margin: 0;
 	   padding: 0;
-	   background-color: white;	
 	   top: 0;
-	   position: fixed;
+	   display: block;
 	}
 
 	.header ul {
 		list-style-type: none;
 	    margin: 0;
-	    padding-top: 12px;
-	    padding-bottom: 12px;
-	    padding-right: 12px;
+	    padding-top: 0.5em;
+	    padding-bottom: 0.5em;
+	    padding-right: 0.5em;
 	    float: right;
 
 	}
@@ -142,18 +145,41 @@ img {
 	}
 
 	.header li a {
-		color: black;
-		font-size: 28px;
+		color: white;
+		font-size: 1em;
+		text-decoration: none;
+		font-weight: 900;
 	}
 
+	.splash {
+		display: inline-block;
+		margin-top: 150px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
 
-	h1 { 
-	   position: absolute; 
-	   top: 105px; 
-	   left: 30px; 
-	   font-size: 95px;
+	.splash>h1{ 
+	   display: inline-block;
+	   margin: 0 auto;
+	   width: 100%;
+	   text-align: center;
+	   font-size: 3em;
 	   color: white;
 	   font-weight: normal;
+	   font-family: 'Amatic SC';
+	}
+
+	.splash>h2 {
+		font-family: 'Amatic SC';
+		color: white;
+		font-size: 1.5em;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 0.1em;
+		margin-bottom: 0.1em;
+		width: 100%;
+		text-align: center;
 	}
 
 

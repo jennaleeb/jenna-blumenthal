@@ -17,97 +17,116 @@ html {
 html, body {
   margin: 0;
   padding: 0;
-  font-family: 'Amatic SC', sans-serif; }
+  font-family: Roboto, 'Amatic SC', sans-serif;
+  font-size: 24px; }
 
-img {
-  max-width: 100%; }
+body {
+  background: url(https://dl.dropboxusercontent.com/u/19014071/Bitmaker/profile_chandelier_v4.png) no-repeat;
+  background-attachment: fixed;
+  background-size: cover; }
 
 /*****************************************************************************
   Layout Styles
 ******************************************************************************/
-@media screen and (max-width: 700px) {
-  .header {
-    position: fixed;
-    width: 100%;
-    /* for IE 6 */
-    border: none;
-    margin: 0;
-    padding: 0;
-    background-color: white; }
+/*@media screen and (max-width: 700px){
+	.header {
+	   width: 100%; /* for IE 6 */
+/*	   border: none;  
+	   margin: 0;
+	   padding: 0;
 
-  .header ul {
-    list-style-type: none;
-    margin: 0;
-    padding-top: 0;
-    padding-bottom: 5px;
-    padding-right: 5px;
-    float: right; }
+	}
 
-  .header li {
-    display: inline;
-    padding: 5px; }
+	.header ul {
+		list-style-type: none;
+	    margin: 0;
+	    padding-top: 0;
+	    padding-bottom: 5px;
+	    padding-right: 5px;
+	    float: right;
 
-  .header li a {
-    color: black;
-    font-size: 20px; }
+	}
 
-  a:link, a:visited {
-    color: grey; }
+	.header li {
+		display: inline;
+		padding: 5px;
+		color: white;
+		font-style: sans-serif;
 
-  p a:hover {
-    color: tomato; }
 
-  h1 {
-    position: absolute;
-    top: 70px;
-    left: 5px;
-    font-size: 10vw;
-    color: white;
-    font-weight: normal; }
+	}
 
-  .image h2 {
-    position: absolute;
-    top: 180px;
-    left: 5px;
-    font-size: 15vw;
-    color: white;
-    font-weight: normal; }
+	.header li a {
+		color: white;
+		font-size: 20px;
+	}
 
-  .about {
-    text-align: center; }
+	a:link, a:visited {
+	    color: grey;
 
-  .about h2 {
-    font-size: 30px; }
+	}
 
-  .about p {
-    width: 100%;
-    margin: 0;
-    font-size: 24px; }
+	p a:hover {
+	    color: tomato;
+	}	
 
-  .about a img {
-    width: 48px;
-    padding: 10px 5px 25px 5px;
-    position: relative; }
- }
+	h1 { 
+	   position: absolute; 
+	   top: 70px; 
+	   left: 5px; 
+	   font-size: 10vw;
+	   color: white;
+	   font-weight: normal;
+	}
 
+	.image h2 { 
+	   position: absolute; 
+	   top: 180px; 
+	   left: 5px; 
+	   font-size: 15vw;
+	   color: white;
+	   font-weight: normal;
+	}
+
+	.about {
+	text-align: center;
+	}
+
+	.about h2 {
+		font-size: 30px;
+	}
+
+	.about p {
+		width: 100%;
+	  	margin: 0;
+	  	font-size: 24px;
+
+	}
+
+
+	.about a img {
+		width: 48px;
+		padding: 10px 5px 25px 5px;
+		position: relative;
+	}
+
+}*/
 @media screen and (min-width: 750px) {
   .header {
-    position: fixed;
     width: 100%;
     /* for IE 6 */
     border: none;
     margin: 0;
     padding: 0;
-    background-color: white;
     top: 0;
-    position: fixed; }
+    display: block; }
 
   .header ul {
     list-style-type: none;
     margin: 0;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 12px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 0.5em;
     float: right; }
 
   .header li {
@@ -115,16 +134,38 @@ img {
     padding: 10px; }
 
   .header li a {
-    color: black;
-    font-size: 28px; }
-
-  h1 {
-    position: absolute;
-    top: 105px;
-    left: 30px;
-    font-size: 95px;
     color: white;
-    font-weight: normal; }
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: 900; }
+
+  .splash {
+    display: inline-block;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%; }
+
+  .splash > h1 {
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+    font-weight: normal;
+    font-family: 'Amatic SC'; }
+
+  .splash > h2 {
+    font-family: 'Amatic SC';
+    color: white;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    width: 100%;
+    text-align: center; }
 
   header {
     float: right;
