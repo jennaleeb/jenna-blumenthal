@@ -192,13 +192,14 @@ body {
 		font-size: 1em;
 		text-align: center;
 		margin-top: 8em;
+		transform: skewY(-5deg);
 
 	}
 
 
 	.about {
-		margin-top: 2em;
-		margin-bottom: 2em;
+		margin-top: 3em;
+		margin-bottom: 3em;
 	}
 
 	.content h2 {
@@ -206,7 +207,7 @@ body {
 		padding-top: 1em;
 		margin: 0 auto;
 		font-family: 'Amatic SC';
-		text-decoration: underline;
+
 
 	}
 
@@ -224,15 +225,25 @@ body {
 		position: relative;
 	}
 
+/*Makes text in content align straight again.*/
+	.text-section {
+		transform: skewY(5deg);
+	}
+
 	.about-section {
 
 	}
 
-	.projects {
+	.experience {
 		background-color: #282828;
 		padding-bottom: 1em;
 		color: white;
 		min-height: 20em;
+	}
+
+	.contact {
+		padding-top: 1.5em;
+		padding-bottom: 2em;
 	}
 }
 
