@@ -175,18 +175,19 @@ body {
     position: relative;
     font-size: 1em;
     text-align: center;
-    margin-top: 8em; }
+    margin-top: 8em;
+    -webkit-transform: skewY(-5deg);
+            transform: skewY(-5deg); }
 
   .about {
-    margin-top: 2em;
-    margin-bottom: 2em; }
+    margin-top: 3em;
+    margin-bottom: 3em; }
 
   .content h2 {
     font-size: 2em;
     padding-top: 1em;
     margin: 0 auto;
-    font-family: 'Amatic SC';
-    text-decoration: underline; }
+    font-family: 'Amatic SC'; }
 
   .content p {
     font-size: 1em;
@@ -198,12 +199,21 @@ body {
     padding: 10px 5px 25px 5px;
     position: relative; }
 
+  /*Makes text in content align straight again.*/
+  .text-section {
+    -webkit-transform: skewY(5deg);
+            transform: skewY(5deg); }
 
-  .projects {
+
+  .experience {
     background-color: #282828;
     padding-bottom: 1em;
     color: white;
     min-height: 20em; }
+
+  .contact {
+    padding-top: 1.5em;
+    padding-bottom: 2em; }
  }
 
 /*****************************************************************************
