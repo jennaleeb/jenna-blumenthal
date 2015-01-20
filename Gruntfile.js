@@ -193,10 +193,9 @@ module.exports = function (grunt) {
                     src: [
                         '*.{ico,png,txt}',
                         '.htaccess',
-                        'images/{,*/}*.webp',
+                        'images/{,*/}*.*',
                         '{,*/}*.html',
                         'styles/fonts/{,*/}*.*',
-                        'images',
                         'README.md'
                     ]
                 },{
@@ -230,7 +229,7 @@ module.exports = function (grunt) {
           },
           pages: {
             options: {
-              remote: '!!! PASTE YOUR GITHUB REPO URL HERE',
+              remote: 'https://github.com/jennaleeb/jenna-blumenthal',
               branch: 'gh-pages'
             }
           },
