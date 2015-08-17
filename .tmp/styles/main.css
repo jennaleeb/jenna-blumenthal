@@ -18,7 +18,7 @@ html, body {
   margin: 0;
   padding: 0;
   font-family: Roboto, 'Amatic SC', sans-serif;
-  font-size: 20px; }
+  font-size: 18px; }
 
 body {
   background: url(https://dl.dropboxusercontent.com/u/19014071/Bitmaker/profile_chandelier_v4.png) no-repeat top center fixed;
@@ -42,11 +42,10 @@ body {
 
   .header ul {
     list-style-type: none;
-    margin: 0;
-    padding-top: 0.5em;
+    margin: 1em 0 0 0;
     padding-bottom: 0.5em;
     padding-right: 1em;
-    float: right; }
+    text-align: center; }
 
   .header li {
     display: inline;
@@ -54,12 +53,13 @@ body {
 
   .header li a {
     color: white;
-    font-size: 0.8em;
+    font-size: 0.9em;
     text-decoration: none;
-    font-weight: 900; }
+    font-weight: 900;
+    padding-top: 4px; }
 
   .header li a:hover {
-    text-decoration: overline; }
+    border-top: 2px solid white; }
 
   .splash {
     display: inline-block;
@@ -100,8 +100,11 @@ body {
             transform: skewY(-5deg); }
 
   .about {
-    margin-top: 3em;
+    margin-top: 14em;
     margin-bottom: 3em; }
+
+  .external-link a {
+    color: grey; }
 
   .content h2 {
     font-size: 2em;
@@ -109,15 +112,17 @@ body {
     margin: 0 auto;
     font-family: 'Amatic SC'; }
 
-  .content p {
+  .about p {
     font-size: 1em;
     width: 35em;
     margin: 1.5em auto 1em auto; }
 
-  .contact a img {
+  .contact a {
     width: 48px;
     padding: 10px 5px 25px 5px;
     position: relative; }
+    .contact a i {
+      color: grey; }
 
   /*Makes text in content align straight again.*/
   .text-section {
@@ -130,7 +135,7 @@ body {
     background-color: #282828;
     padding-bottom: 1em;
     color: white;
-    min-height: 20em; }
+    min-height: 25em; }
 
   .contact {
     padding-top: 1.5em;
@@ -278,3 +283,19 @@ body {
     font-size: 12px;
     line-height: 17px; }
  }
+
+.project-item {
+  border: 1px solid white;
+  margin-top: 2em;
+  margin-right: 1em;
+  display: inline-block;
+  width: 25%;
+  height: 13em;
+  vertical-align: top; }
+  .project-item h5 {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
