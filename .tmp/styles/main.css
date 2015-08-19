@@ -25,125 +25,131 @@ body {
   background-attachment: fixed;
   background-size: cover;
   height: 100%;
-  width: 100%; }
+  max-width: 100%; }
 
 /*****************************************************************************
   Layout Styles
 ******************************************************************************/
-@media screen and (min-width: 1px) {
-  .header {
-    width: 100%;
-    /* for IE 6 */
-    border: none;
-    margin: 0;
-    padding: 0;
-    top: 0;
-    display: block; }
+.header {
+  margin: 0;
+  padding: 0;
+  display: block; }
 
-  .header ul {
-    list-style-type: none;
-    margin: 1em 0 0 0;
-    padding-bottom: 0.5em;
-    padding-right: 1em;
-    text-align: center; }
+.header ul {
+  list-style-type: none;
+  margin: 1em 0 0 0;
+  padding: 0;
+  text-align: center; }
 
-  .header li {
-    display: inline;
-    padding: 8px; }
+.header li {
+  display: inline;
+  padding: 8px; }
 
+.header li a {
+  color: white;
+  font-size: 0.9em;
+  text-decoration: none;
+  font-weight: 900;
+  padding-top: 4px; }
+
+@media screen and (max-width: 768px) {
   .header li a {
-    color: white;
-    font-size: 0.9em;
-    text-decoration: none;
-    font-weight: 900;
-    padding-top: 4px; }
+    font-size: 0.7em; }
+ }
 
-  .header li a:hover {
-    border-top: 2px solid white; }
+.header li a:hover {
+  border-top: 2px solid white; }
 
-  .splash {
-    display: inline-block;
-    margin-top: 150px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%; }
+.splash {
+  display: inline-block;
+  margin-top: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%; }
 
-  .splash > h1 {
-    display: inline-block;
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-    font-size: 3em;
-    color: white;
-    font-weight: normal;
-    font-family: 'Amatic SC'; }
+.splash > h1 {
+  display: inline-block;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  font-size: 3em;
+  color: white;
+  font-weight: normal;
+  font-family: 'Amatic SC'; }
 
-  .splash > h2 {
-    font-family: 'Amatic SC';
-    color: white;
-    font-size: 1.5em;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0.1em;
-    margin-bottom: 0.1em;
-    width: 100%;
-    text-align: center; }
+.splash > h2 {
+  font-family: 'Amatic SC';
+  color: white;
+  font-size: 1.5em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.1em;
+  margin-bottom: 0.1em;
+  width: 100%;
+  text-align: center; }
 
-  .content {
-    display: block;
-    background-color: white;
-    position: relative;
-    font-size: 1em;
-    text-align: center;
-    margin-top: 8em;
-    -webkit-transform: skewY(-5deg);
-            transform: skewY(-5deg); }
+.content {
+  display: block;
+  background-color: white;
+  position: relative;
+  font-size: 1em;
+  text-align: center;
+  margin-top: 8em;
+  -webkit-transform: skewY(-5deg);
+          transform: skewY(-5deg); }
 
-  .about {
-    margin-top: 14em;
-    margin-bottom: 3em; }
+.about {
+  margin-top: 14em;
+  margin-bottom: 3em; }
 
-  .external-link a {
+.external-link a {
+  color: grey; }
+
+.content h2 {
+  font-size: 2em;
+  padding-top: 1em;
+  margin: 0 auto;
+  font-family: 'Amatic SC'; }
+
+.about p {
+  font-size: 1em;
+  margin: 1.5em 1em 1em 1em; }
+
+@media screen and (min-width: 820px) {
+  .about p {
+    width: 75%;
+    margin: 1.5em auto; }
+ }
+
+.contact h2 {
+  margin-bottom: 0.5em; }
+
+.contact a {
+  width: 48px;
+  padding: 10px 5px 25px 5px;
+  position: relative; }
+  .contact a i {
     color: grey; }
 
-  .content h2 {
-    font-size: 2em;
-    padding-top: 1em;
-    margin: 0 auto;
-    font-family: 'Amatic SC'; }
+/*Makes text in content align straight again.*/
+.text-section {
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
+  padding: 1.4em 0;
+  line-height: 1.3em; }
 
-  .about p {
-    font-size: 1em;
-    width: 35em;
-    margin: 1.5em auto 1em auto; }
+.section-dark {
+  background-color: #282828;
+  padding-bottom: 1em;
+  color: white;
+  min-height: 25em; }
 
-  .contact a {
-    width: 48px;
-    padding: 10px 5px 25px 5px;
-    position: relative; }
-    .contact a i {
-      color: grey; }
+.contact {
+  padding-top: 1.5em;
+  padding-bottom: 2em; }
 
-  /*Makes text in content align straight again.*/
-  .text-section {
-    -webkit-transform: skewY(5deg);
-            transform: skewY(5deg);
-    padding: 1.4em 0;
-    line-height: 1.3em; }
-
-  .section-dark {
-    background-color: #282828;
-    padding-bottom: 1em;
-    color: white;
-    min-height: 25em; }
-
-  .contact {
-    padding-top: 1.5em;
-    padding-bottom: 2em; }
-
-  .contact a {
-    text-decoration: none; }
- }
+.contact a {
+  text-decoration: none; }
 
 /*****************************************************************************
   Module Styles
@@ -257,31 +263,21 @@ body {
   background-color: #cf5300;
   box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.2); }
 
-@media screen and (max-width: 320px) {
-  .header ul {
-    margin: 0;
-    padding: 0;
-    text-align: right;
-    float: right; }
-
-  .header li {
-    padding: 0;
-    display: block; }
-
-  .header li a {
-    font-size: 0.8em; }
-
-  .content p {
-    width: 94%; }
-
+@media screen and (max-width: 768px) {
   .timeline {
     font-size: 1em;
     width: 100%;
     margin: 0; }
 
   .timeline .timeline-item .info {
-    font-size: 12px;
+    font-size: 0.8em;
     line-height: 17px; }
+
+  .timeline .timeline-item .year {
+    font-size: 0.8em;
+    font-weight: bold;
+    width: 22%;
+    text-align: right; }
  }
 
 .project-item {
