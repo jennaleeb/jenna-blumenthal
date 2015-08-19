@@ -18,11 +18,7 @@ html, body {
 	margin: 0;
 	padding: 0;
 	font-family: Roboto,'Amatic SC', sans-serif;
-<<<<<<< HEAD
-	font-size: 20px;
-=======
 	font-size: 18px;
->>>>>>> gh-pages
 }
 
 body {
@@ -52,18 +48,10 @@ body {
 
 	.header ul {
 		list-style-type: none;
-<<<<<<< HEAD
-	    margin: 0;
-	    padding-top: 0.5em;
-	    padding-bottom: 0.5em;
-	    padding-right: 1em;
-	    float: right;
-=======
 	    margin: 1em 0 0 0;
 	    padding-bottom: 0.5em;
 	    padding-right: 1em;
 	    text-align: center;
->>>>>>> gh-pages
 
 	}
 
@@ -77,25 +65,14 @@ body {
 
 	.header li a {
 		color: white;
-<<<<<<< HEAD
-		font-size: 0.8em;
-		text-decoration: none;
-		font-weight: 900;
-=======
 		font-size: 0.9em;
 		text-decoration: none;
 		font-weight: 900;
 		padding-top: 4px;
->>>>>>> gh-pages
 	}
 
 	.header li a:hover {
-		
-<<<<<<< HEAD
-		text-decoration: overline;
-=======
 		border-top: 2px solid white;
->>>>>>> gh-pages
 		
 	}
 
@@ -144,12 +121,6 @@ body {
 
 
 	.about {
-<<<<<<< HEAD
-		margin-top: 3em;
-		margin-bottom: 3em;
-	}
-
-=======
 		margin-top: 14em;
 		margin-bottom: 3em;
 	}
@@ -158,7 +129,6 @@ body {
 		color: grey;
 	}
 
->>>>>>> gh-pages
 	.content h2 {
 		font-size: 2em;
 		padding-top: 1em;
@@ -168,24 +138,13 @@ body {
 
 	}
 
-<<<<<<< HEAD
-	.content p {
-=======
 	.about p {
->>>>>>> gh-pages
 		font-size: 1em;
 		width: 35em;
 	  	margin: 1.5em auto 1em auto;
 
 	}
 
-
-<<<<<<< HEAD
-	.contact a img {
-		width: 48px;
-		padding: 10px 5px 25px 5px;
-		position: relative;
-=======
 	.contact a {
 		width: 48px;
 		padding: 10px 5px 25px 5px;
@@ -194,7 +153,6 @@ body {
 		i {
 			color: grey;
 		}
->>>>>>> gh-pages
 	}
 
 /*Makes text in content align straight again.*/
@@ -208,11 +166,7 @@ body {
 		background-color: #282828;
 		padding-bottom: 1em;
 		color: white;
-<<<<<<< HEAD
-		min-height: 20em;
-=======
 		min-height: 25em;
->>>>>>> gh-pages
 	}
 
 	.contact {
@@ -408,8 +362,6 @@ body {
 		line-height: 17px;
 	}
 }
-<<<<<<< HEAD
-=======
 
 .project-item {
 	border: 1px solid white;
@@ -428,4 +380,3 @@ body {
 		transform: translateY(-50%);
 	}
 }
->>>>>>> gh-pages
